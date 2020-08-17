@@ -1,0 +1,57 @@
+package br.classinformatica.vcandroid.classnetk.entidades
+
+class ImagensEfeitos {
+    var id_tela: Long = 0
+    var tela: String = ""
+    var indice: Int = 0
+    var borda: Int = 0
+    var exportar_programa: Int = 0
+    var topo: Int = 0
+    var esquerdo: Int = 0
+    var largura: Int = 0
+    var altura: Int = 0
+    var registra_imagem: Int = 0
+    var imagem_avancar: Int = 0
+    var efeito: Int = 0
+    var delay: Int = 0
+    var cor_borda_interna1: Int = 0
+    var cor_borda_interna2: Int = 0
+    var estilo_borda_interna: Int = 0
+    var espessura_borda_interna: Int = 0
+    var cor_borda_central: Int = 0
+    var cor_borda_externa1: Int = 0
+    var cor_borda_externa2: Int = 0
+    var estilo_borda_externa: Int = 0
+    var espessura_borda_externa: Int = 0
+    var cor_fundo: Int = 0
+    var granulacao: Int = 0
+    var cortar_som_programas: Int = 0
+    var mouse: Int = 0
+    var transparente: Int = 0
+    var cor_transparente: Int = 0
+    var autosize: Int = 0
+    var link: Int = 0
+    var imagem_mousemove: Int = 0
+    var imagem: Int = 0
+    var programa: Int = 0
+    var rotulo_imagem: Int = 0
+    var imagem_click: Int = 0
+    var som: Int = 0
+    var enunciado: Int = 0
+    var mensagem_avalia: Int = 0
+    var voto_funcao: Int = 0
+    var programamodal: Int = 0
+    var funcaoativa: Int = 0
+    var jogomemoria: Int = 0
+    var indice_speech: Int = 0
+    var inicia_invisivel: Int = 0
+    var transparente_xy: Int = 0
+    var transparente_x: Int = 0
+    var transparente_y: Int = 0
+    var imagem_flash: Int = 0
+    var imagem_flash_efeito: Int = 0
+    var angulo: Int = 0
+    var identificador: String = ""
+    var projeto_vcnet: String = ""
+    var localiza_anonimo: Int = 0
+}

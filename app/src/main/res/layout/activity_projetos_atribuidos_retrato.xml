@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/barra"
+            android:gravity="center_vertical">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone"
+                android:layout_margin="10dp"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                    android:id="@+id/llOpcoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="5dp">
+
+                <ImageView
+                        android:id="@+id/ivExpandirContrair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/contrair"
+                        android:layout_margin="5dp"/>
+
+                <ImageView
+                        android:id="@+id/ivOpcoes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/opcoes"
+                        android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/preto"
+                    android:text="@string/projetos_atribuidos"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/llOpcoes"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/rlCabecalho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/ivFoto"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/aluno"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"/>
+
+                <LinearLayout
+                        android:id="@+id/llInformacoes"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:layout_toLeftOf="@+id/ivFoto">
+
+                    <TextView
+                            android:id="@+id/tvProjetosAtribuidosPara"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/preto"
+                            android:layout_margin="5dp"
+                            android:text="@string/projetos_atribuidos_para"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="bottom">
+
+                        <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp">
+
+                            <ImageView
+                                    android:id="@+id/ivAvisos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/aviso1"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"/>
+
+                            <TextView
+                                    android:id="@+id/tvAvisos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:textColor="@color/branco"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="5dp"/>
+
+                        </RelativeLayout>
+
+                        <Button
+                                android:id="@+id/bAutomatricula"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/preto"
+                                android:text="@string/automatricula"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/verde2"
+                    android:layout_margin="5dp">
+
+                <LinearLayout
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"></LinearLayout>
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/preto"
+                        android:text="@string/codigo_titulo"
+                        android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <ListView
+                    android:id="@+id/lvProjetos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"></ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/llMenu"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/branco"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="3dp"
+                    android:background="@drawable/shape_1p_barra_login">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="3dp"
+                        android:background="@drawable/shape_1p_barra_login">
+
+                    <LinearLayout
+                            android:id="@+id/llAlterarCadastro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@color/branco_2"
+                            android:gravity="center_vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/preto"
+                                android:text="@string/alterar_cadastro_usuario"
+                                android:layout_margin="5dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/shape_1p_barra_login"></LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/llConsultarNotas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@color/branco_2"
+                            android:gravity="center_vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/preto"
+                                android:text="@string/consultar_notas"
+                                android:layout_margin="5dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/shape_1p_barra_login"></LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

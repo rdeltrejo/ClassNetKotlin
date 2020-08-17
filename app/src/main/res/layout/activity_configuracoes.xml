@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/barra"
+                android:gravity="center_vertical">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icone"
+                    android:layout_margin="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/preto"
+                    android:text="@string/configuracoes"
+                    android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/preto"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:text="@string/endereco_servidor"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <Button
+                        android:id="@+id/bListar"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/listar"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/preto"/>
+
+                <EditText
+                        android:id="@+id/etServidor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/preto"
+                        android:layout_toLeftOf="@+id/bListar"
+                        android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <CheckBox
+                    android:id="@+id/cbIniciarLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:text="@string/iniciar_login"
+                    android:textColor="@color/preto"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/cbProxy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:text="@string/proxy"
+                    android:textColor="@color/preto"
+                    android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                    android:id="@+id/llProxy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_1p_preto">
+
+                <EditText
+                        android:id="@+id/etServidorProxy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/preto"
+                        android:hint="@string/servidor_proxy"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                <EditText
+                        android:id="@+id/etPortaProxy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/preto"
+                        android:hint="@string/porta_proxy"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:inputType="numberSigned"/>
+
+                <EditText
+                        android:id="@+id/etUsuarioProxy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/preto"
+                        android:hint="@string/usuario_proxy"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                <EditText
+                        android:id="@+id/etSenhaProxy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/preto"
+                        android:hint="@string/senha_proxy"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:inputType="textPassword"/>
+
+                <EditText
+                        android:id="@+id/etSenhaProxyRep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/preto"
+                        android:hint="@string/redigite_senha"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="right">
+
+                <Button
+                        android:id="@+id/bCancelar"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/preto"
+                        android:text="@string/cancelar"
+                        android:layout_marginRight="5dp"/>
+
+                <Button
+                        android:id="@+id/bApagar"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/preto"
+                        android:text="@string/apagar"
+                        android:layout_marginRight="5dp"/>
+
+                <Button
+                        android:id="@+id/bOk"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/preto"
+                        android:text="@string/ok"
+                        android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

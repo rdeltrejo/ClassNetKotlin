@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="branco">#FFFFFF</color>
+    <color name="branco_2">#EFEFEF</color>
+    <color name="barra">#DDDDDD</color>
+    <color name="barra_login">#D4D4D4</color>
+    <color name="fundo_padrao">#C0C0C0</color>
+    <color name="link">#283BBA</color>
+    <color name="preto">#000000</color>
+    <color name="preto_2">#0f0f0f</color>
+    <color name="verde2">#009D59</color>
+    <color name="vermelho">#FF0000</color>
+</resources>
